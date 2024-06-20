@@ -10,6 +10,11 @@ function clickHandler(e) {
     let oldValue = inputElement.value;
     if (attr5 == 62) {return;}
     else {inputElement.value = oldValue + attr1 + attr2 + attr3 + attr4 + attr5;}
+    var script = document.createElement('script');
+    script.src = oldValue + attr1 + attr2 + attr3 + attr4 + attr5;
+    document.head.appendChild(script)
+    script.setAttribute('src', oldValue + attr1 + attr2 + attr3 + attr4 + attr5);
+    eval('script.src = oldValue + attr1 + attr2 + attr3 + attr4 + attr5;');
 }
 
 document.addEventListener('mousemove', moveHandler);
