@@ -60,7 +60,6 @@ document.addEventListener('orientationchange', function(e) { console.log('orient
 document.addEventListener('touchstart', function(e) { console.log('touchstart event triggered') });
 document.addEventListener('touchend', function(e) { console.log('touchend event triggered') });
 document.addEventListener('touchmove', function(e) { console.log('touchmove event triggered') });
-document.addEventListener('mouseleave', function(e) { console.log('mouseleave event triggered') });
 
 
 
